@@ -1,0 +1,51 @@
+# Patch/diff artifacts.
+*.patch
+*.diff
+*.orig
+*.rej
+interdiff*.txt
+
+# emacs artifacts.
+*~
+\#*\#
+
+# VIM
+*.un~
+Session.vim
+.netrwhist
+*~
+*.swp
+.lvimrc
+
+# Hidden files.
+.DS*
+.project
+.idea/
+.vscode
+.history
+
+# VS Code
+.vscode
+*code-workspace
+
+# Windows links.
+*.url
+*.lnk
+
+# Temporary files.
+tmp*
+test-website
+
+# logs
+*.log
+*/debug.log
+
+# JS libraries and packages
+node_modules/*
+bower_components/*
+
+# Tags file
+tags
+
+# SQL
+*.sql

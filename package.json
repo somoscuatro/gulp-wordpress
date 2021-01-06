@@ -1,0 +1,73 @@
+{
+  "name": "@somoscuatro/gulp-wordpress",
+  "version": "1.0.0",
+  "description": "A Gulp task collection for WordPress themes and plugins.",
+  "author": {
+    "name": "somoscuatro",
+    "email": "tech@somoscuatro.com",
+    "url": "https://somoscuatro.es"
+  },
+  "homepage": "https://github.com/somoscuatro/gulp-wordpress/blob/master/README.md",
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somoscuatro/gulp-wordpress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/somoscuatro/gulp-wordpress/issues",
+    "email": "bugs@somoscuatro.es"
+  },
+  "main": "./dist/index.html",
+  "scripts": {
+    "test": "./test/clean-test-env.sh && ./test/create-test-env.sh && ./test/run-gulp.sh && ./node_modules/.bin/mocha -g default || exit 1; npm run test-production --scripts-prepend-node-path",
+    "test-production": "./test/run-gulp.sh --production && ./node_modules/.bin/mocha -g production || exit 1 && ./test/clean-test-env.sh"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-fs": "^2.0.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "app-root-path": "^3.0.0",
+    "autoprefixer": "^10.2.0",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "del": "^6.0.0",
+    "eslint": "^7.17.0",
+    "gulp": "^4.0.2",
+    "gulp-buffer": "^0.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-changed-in-place": "^2.3.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-google-webfonts": "^4.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-tap": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "require-dir": "^1.2.0",
+    "stylelint": "^13.8.0",
+    "yargs": "^16.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "keywords": [
+    "gulp",
+    "task",
+    "runners",
+    "collection",
+    "wordpress",
+    "theme",
+    "kit",
+    "gulpfile"
+  ]
+}
