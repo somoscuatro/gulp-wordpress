@@ -1,4 +1,8 @@
 == Changelog ==
 
+= 1.0.1 - 2021-01-07 =
+* Fixed dist folder was not cleaned during the build process.
+* Changed package publish registry.
+
 = 1.0.0 - 2021-01-07 =
 * Initial version.

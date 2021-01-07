@@ -12,7 +12,7 @@ module.exports = function(config) {
     const del = require('del');
 
     return del([
-      `${config.dist.main}/**`,
+      `${config.dist.main}`,
     ]);
   });
 };
