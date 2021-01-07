@@ -9,6 +9,9 @@
   },
   "homepage": "https://github.com/somoscuatro/gulp-wordpress/blob/master/README.md",
   "license": "0BSD",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/somoscuatro/gulp-wordpress.git"
