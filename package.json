@@ -1,6 +1,6 @@
 {
   "name": "@somoscuatro/gulp-wordpress",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Gulp task collection for WordPress themes and plugins.",
   "author": {
     "name": "somoscuatro",

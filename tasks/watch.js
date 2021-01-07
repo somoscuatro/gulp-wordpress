@@ -11,16 +11,8 @@ module.exports = function(config) {
    * Watches files and run related tasks if there are changes.
    */
   gulp.task('watch:start', function() {
-    gulp.watch([
-      config.src.sass,
-    ], gulp.series(
-        'lint:sass', 'sass'
-    ));
-    gulp.watch([
-      config.src.js,
-    ], gulp.series(
-        'lint:js', 'js'
-    ));
+    gulp.watch(config.src.sass, gulp.series('lint:sass', 'sass'));
+    gulp.watch(config.src.js, gulp.series('lint:js', 'js'));
     gulp.watch(config.src.images, gulp.series(
         'images'
     ));
