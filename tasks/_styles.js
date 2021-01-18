@@ -21,6 +21,7 @@ module.exports = function(config, pkg) {
     const changed = require('gulp-changed');
     const gulpIf = require('gulp-if');
     const handleErrors = require('../utils/handleErrors');
+    const magicImporter = require('node-sass-magic-importer');
     const rename = require('gulp-rename');
     const sass = require('gulp-sass');
     const sourcemaps = require('gulp-sourcemaps');
@@ -29,6 +30,9 @@ module.exports = function(config, pkg) {
         .pipe(changed(config.dist.main, {extension: '.css'}))
         .pipe(gulpIf(!isProduction, sourcemaps.init()))
         .pipe(sass({
+          importer: magicImporter({
+            disableImportOnce: true,
+          }),
           compress: true,
           outputStyle: isProduction ? 'compressed' : 'nested',
           use: [
