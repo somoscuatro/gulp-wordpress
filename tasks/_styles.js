@@ -23,7 +23,7 @@ module.exports = function(config, pkg) {
     const handleErrors = require('../utils/handleErrors');
     const magicImporter = require('node-sass-magic-importer');
     const rename = require('gulp-rename');
-    const sass = require('gulp-sass');
+    const sass = require('gulp-sass')(require('sass'));
     const sourcemaps = require('gulp-sourcemaps');
 
     const task = gulp.src(config.src.sass)
