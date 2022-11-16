@@ -34,7 +34,7 @@ module.exports = function(config, pkg) {
             disableImportOnce: true,
           }),
           compress: true,
-          outputStyle: isProduction ? 'compressed' : 'nested',
+          outputStyle: isProduction ? 'compressed' : 'expanded',
           use: [
             autoprefixer(),
           ],
