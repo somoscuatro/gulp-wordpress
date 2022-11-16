@@ -2,6 +2,7 @@
   "name": "@somoscuatro/gulp-wordpress",
   "version": "2.0.0",
   "description": "A Gulp task collection for WordPress themes and plugins.",
+  "type": "module",
   "author": {
     "name": "somoscuatro",
     "email": "tech@somoscuatro.com",
